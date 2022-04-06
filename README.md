@@ -15,4 +15,29 @@ From the data i tried to answer these few questions I had, which is :
   5. How's the comparison between the number of Playable Character per Weapon type?
   6. How's the distribution of Vision per region?
  
+ First let's import the important library
  
+ ```
+import pandas as pd
+import seaborn as sns
+import numpy as np
+from matplotlib import pyplot as plt
+```
+Using Pandas to read html source table and creating Dataframe, and using Seaborn and Matplotlib for simple Data Visualization.
+
+We'll be using the data from Genshin Impact Fandom Wiki. Please take note that the data used is last updated on 5-4-2022.
+From the genshin impact wiki there's 2 table that we want to take.
+
+```
+url_1='https://genshin-impact.fandom.com/wiki/Characters/Comparison#Normal_Attacks'
+url_2='https://genshin-impact.fandom.com/wiki/Characters'
+
+#parsing table from url1 & url2 to dataframe
+tables_1 = pd.read_html(url_1)
+tables_2 = pd.read_html(url_2)
+df1 = tables_1[1]
+df2 = tables_2[3]
+
+```
+
+Using Pandas, we parse the table into dataframe

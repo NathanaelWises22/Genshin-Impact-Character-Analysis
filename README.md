@@ -44,3 +44,10 @@ df2 = tables_2[3]
 ```
 
 Using Pandas, we parse the table into dataframe
+
+
+
+
+
+
+Yae Miko is my favorite character to boot. Who's your favorite Genshin character?

@@ -1,6 +1,9 @@
 # Genshin-Impact-Character-Analysis
 
-The 2,6 update is finally here!!! With Kamisato Ayato joining 48 Playable Character we can gacha, a question arise in the minds of every player. "How strong is Ayato?"
+![30419](https://user-images.githubusercontent.com/92627169/162481274-ee3b17cd-5343-4225-b02f-2cc6cd5ba7d2.png)
+
+I've been very invested in this game for over a year. So now with the new 2.6 update, I try to make my own simple analysis.
+With Kamisato Ayato joining, there's 48 Playable Character we can gacha, a question arise in the minds of every player. "How strong is Ayato?"
 On this occasion i tried to make a simple Exploratory Data Analysis about Genshin Impact character base stats at lvl 90.
 
 This is not a recommendation about which character is the best. Because of the nature of the game with different playstyle,elemental reaction,equipment and team composition etc, greatly affect the character damage output. So, the best character is highly subjective according to the player preference.

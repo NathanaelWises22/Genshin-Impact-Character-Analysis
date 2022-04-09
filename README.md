@@ -116,7 +116,8 @@ for p in ax.patches:
 plt.show()
 ```
 ![Weapon count](https://user-images.githubusercontent.com/92627169/162574882-972db713-3f74-4931-9b1a-e112d2fad40b.png)
-swords seems to be everyone favorite weapon
+
+Sword seems to be everyone favorite weapon
 ```
 ax = sns.countplot(x='Region',data = df3,palette = palette_Region)
 for p in ax.patches:
@@ -125,6 +126,7 @@ for p in ax.patches:
 plt.show()
 ```
 ![Character per region count](https://user-images.githubusercontent.com/92627169/162574891-674f18e6-3ed6-4142-be6d-80794ba2a400.png)
+
 Mondstat currently have the most playable character with 18 characters. Meanwhile Snezhnaya currently only have Childe as PC ( Signora when??). This ignores The Traveller and Aloy who doens't have their own region.
 
 ```
@@ -135,6 +137,7 @@ for p in ax.patches:
 plt.show()
 ```
 ![Element count](https://user-images.githubusercontent.com/92627169/162574887-a35c838d-342b-457c-8063-1028b5e2c103.png)
+
 Apparently Pyro and Cryo are the most popular element with electro coming in second.
 
 ```
@@ -149,7 +152,8 @@ for i in range(df3.shape[0]):
           bbox=dict(facecolor='pink',alpha=0.1))
 ```
 ![Attack-Def plot](https://user-images.githubusercontent.com/92627169/162574923-3d5b3c20-0510-4c33-a097-b1ab79a20863.png)
-The character with highest base attack at lvl 90 is Xiao the Adepti, coming in second is Yae Miko,Eula,and Ayaka. With Itto being the character with highest base DEF at lvl 90, and  Qiqi,Albedo and HuTao coming in behind.
+
+The character with highest base attack at lvl 90 is Xiao the Adepti, coming in second is Yae Miko,Eula,and Ayaka. With Itto being the character with highest base DEF at lvl 90, and  Qiqi,Albedo and HuTao coming in behind. 
 
 ```
 # plotting All character ATK & HP 
@@ -163,6 +167,7 @@ for i in range(df3.shape[0]):
           bbox=dict(facecolor='pink',alpha=0.1))
  ```
 ![Hp-ATK plot](https://user-images.githubusercontent.com/92627169/162574934-74e25030-a4f4-448f-86c3-c966f41a17c0.png)
+
 The healthiest chara is The Ghost Girl HuTao with a base HP at lvl 90 being >15k, even higher than our Geo Daddy,Zhongli. And the most squishy character is Fischl & Sucrose
 
 ```
@@ -176,4 +181,20 @@ ax= sns.catplot(x="Element",col='Region', kind="count", palette= palette_element
 ax= sns.catplot(x="Weapon",col='Region', kind="count", palette= palette_weapon , data=df3)
 ```
 ![weapon per region count](https://user-images.githubusercontent.com/92627169/162574958-85e06e7b-c07f-456e-a8f4-8f5bd8188ef2.png)
-Yae Miko is my favorite character to boot. Who's your favorite Genshin character?
+
+While Catalyst seems to be the most used weapon in Mondstat, Polearm seems to be the most favorites in Liyue.
+
+# Conclusion
+
+The character with highest base ATK at lvl 90 is Xiao.
+The character with highest base DEF at lvl 90 is Arataki Itto.
+and the character with highest base HP at lvl 90 is HuTao.
+
+This shows that while Ayato doesn't have a realy-really-really high ATK, He does have HP at higher tier compared to most of other character.
+
+Currently, Mondstat have the most Playable Character. Could it be because it's the earliest region thats released in-game?
+And it seems that Cryo and Pyro are both the most common Element in-game. I really anticipated when they released the last 'Dendro' element.
+
+Because of other factors such as Playstyle, Elemental reaction, Team composition, Ascension Stat,Talent level etc, it is exponentially harder to determine with absolute certainty which is the best character. So I concluded that The best character is the most chacater you had fun with, your most favorite character. 
+Yae Miko is my favorite character to boot.
+Who's your favorite Genshin character?

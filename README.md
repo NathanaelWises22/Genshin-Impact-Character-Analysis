@@ -200,6 +200,6 @@ This shows that while Ayato doesn't have a realy-really-really high ATK, He does
 Currently, Mondstat have the most Playable Character. Could it be because it's the earliest region thats released in-game?
 And it seems that Cryo and Pyro are both the most common Element in-game. I really anticipated when they released the last 'Dendro' element.
 
-Because of other factors such as Playstyle, Elemental reaction, Team composition, Ascension Stat,Talent level etc, it is exponentially harder to determine with absolute certainty which is the best character. So I concluded that The best character is the most chacater you had fun with, your most favorite character. 
+Because of other factors such as Playstyle, Elemental reaction, Team composition, Ascension Stat,Talent level etc, it is exponentially harder to determine with absolute certainty which is the best character. I will make a more in-depth game analysis in the future. But for now I concluded that The best character is the most chacater you had fun with, your most favorite character. 
 Yae Miko is my favorite character to boot.
 Who's your favorite Genshin character?

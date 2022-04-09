@@ -48,7 +48,7 @@ df1 = tables_1[1]
 df2 = tables_2[3]
 
 ```
-Using Pandas, we parse the table into a dataframe
+Using Pandas, we parse the table into a dataframe.
 While the first table show the basic stats of HP,ATK and DEF. The second table show the characters Element,Weapon and Region.
 After we get our data, let's remove any NaN column and merge the 2 datasets into 1.
 
@@ -61,7 +61,8 @@ df3 = df1.merge(df2)
 df3.head()
 
 ```
-<insert df3 here
+![2022-04-09 (3)](https://user-images.githubusercontent.com/92627169/162576040-74ccba38-0357-4cf2-8119-fe612ba20cf9.png)
+
 We get the new dataframe .
 
 I want to make a comparison of the character gender, but because the newest table didn't include it I manually added it by creating a new column.

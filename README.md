@@ -115,7 +115,7 @@ for p in ax.patches:
 
 plt.show()
 ```
--insert weapon comaprison here
+![Weapon count](https://user-images.githubusercontent.com/92627169/162574882-972db713-3f74-4931-9b1a-e112d2fad40b.png)
 swords seems to be everyone favorite weapon
 ```
 ax = sns.countplot(x='Region',data = df3,palette = palette_Region)
@@ -124,7 +124,7 @@ for p in ax.patches:
 
 plt.show()
 ```
--insert region comparison here
+![Character per region count](https://user-images.githubusercontent.com/92627169/162574891-674f18e6-3ed6-4142-be6d-80794ba2a400.png)
 Mondstat currently have the most playable character with 18 characters. Meanwhile Snezhnaya currently only have Childe as PC ( Signora when??). This ignores The Traveller and Aloy who doens't have their own region.
 
 ```
@@ -134,7 +134,7 @@ for p in ax.patches:
 
 plt.show()
 ```
--insert element comparison here
+![Element count](https://user-images.githubusercontent.com/92627169/162574887-a35c838d-342b-457c-8063-1028b5e2c103.png)
 Apparently Pyro and Cryo are the most popular element with electro coming in second.
 
 ```
@@ -148,7 +148,7 @@ for i in range(df3.shape[0]):
           fontdict=dict(color='black',size=8),
           bbox=dict(facecolor='pink',alpha=0.1))
 ```
--insert ATK-DEF here
+![Attack-Def plot](https://user-images.githubusercontent.com/92627169/162574923-3d5b3c20-0510-4c33-a097-b1ab79a20863.png)
 The character with highest base attack at lvl 90 is Xiao the Adepti, coming in second is Yae Miko,Eula,and Ayaka. With Itto being the character with highest base DEF at lvl 90, and  Qiqi,Albedo and HuTao coming in behind.
 
 ```
@@ -162,17 +162,18 @@ for i in range(df3.shape[0]):
           fontdict=dict(color='black',size=7),
           bbox=dict(facecolor='pink',alpha=0.1))
  ```
--insert HP-atk plot here
+![Hp-ATK plot](https://user-images.githubusercontent.com/92627169/162574934-74e25030-a4f4-448f-86c3-c966f41a17c0.png)
 The healthiest chara is The Ghost Girl HuTao with a base HP at lvl 90 being >15k, even higher than our Geo Daddy,Zhongli. And the most squishy character is Fischl & Sucrose
 
 ```
 # compare Mondstadt & Liyue & Inazuma Element
 ax= sns.catplot(x="Element",col='Region', kind="count", palette= palette_element , data=df3)
 ```
-insert element/region comparison
+![Element per region](https://user-images.githubusercontent.com/92627169/162574941-b75c266b-3e29-473b-84ad-9762aa3a4f01.png)
 
 ```
 # compare Mondstadt & Liyue & Inazuma Weapon
 ax= sns.catplot(x="Weapon",col='Region', kind="count", palette= palette_weapon , data=df3)
 ```
+![weapon per region count](https://user-images.githubusercontent.com/92627169/162574958-85e06e7b-c07f-456e-a8f4-8f5bd8188ef2.png)
 Yae Miko is my favorite character to boot. Who's your favorite Genshin character?

@@ -141,7 +141,7 @@ plt.show()
 ```
 ![Element count](https://user-images.githubusercontent.com/92627169/162574887-a35c838d-342b-457c-8063-1028b5e2c103.png)
 
-Apparently Pyro and Cryo are the most popular element with electro coming in second.
+Apparently Pyro and Cryo are the most popular element with electro coming in second. While the least common element is Hydro (if you didn't count for the yet released Dendro element nor the Traveller)
 
 ```
 # plotting All character ATK & DEF 
@@ -178,6 +178,8 @@ The healthiest chara is The Ghost Girl HuTao with a base HP at lvl 90 being >15k
 ax= sns.catplot(x="Element",col='Region', kind="count", palette= palette_element , data=df3)
 ```
 ![Element per region](https://user-images.githubusercontent.com/92627169/162574941-b75c266b-3e29-473b-84ad-9762aa3a4f01.png)
+
+Eventhough it's the Land of Geo and Wind, the most common Vision in both region are Cryo and Pyro. While Inazume,true to its name is the land of Electro.
 
 ```
 # compare Mondstadt & Liyue & Inazuma Weapon

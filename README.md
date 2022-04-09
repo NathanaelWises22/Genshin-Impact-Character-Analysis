@@ -4,7 +4,7 @@
 
 I've been very invested in this game for over a year,  So when i came across an article https://medium.com/analytics-vidhya/exploratory-analysis-on-genshin-impact-characters-with-pandas-seaborn-are-liyues-stronger-than-f46a9af07fb5So which beautifully show an EDA about Genshin's characters and with the recent 2.6 update, Naturally, I want to try to make my own version of analysis, inspired by the article. 
 
-With Kamisato Ayato joining, there's 48 Playable Character we can gacha, a question arise on my mind, "How strong is Ayato?", "How is he compared to other characters?" , "Is my Waifu the best Character??".
+With Kamisato Ayato joining there's 48 Playable Character we can gacha. A question arise on my mind "How strong is Ayato?", "How is he compared to other characters?" , "Is my Waifu the best Character??".
 So on this occasion i tried to make a simple Exploratory Data Analysis about Genshin Impact character base stats at lvl 90.
 
 This is not a recommendation about which character is the best. Because of the nature of the game, with different playstyle,elemental reaction,equipment and team composition etc, greatly affect the damage output. So, the best character is highly subjective according to the player preference.

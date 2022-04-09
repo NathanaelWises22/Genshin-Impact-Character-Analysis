@@ -33,8 +33,9 @@ We'll be using the data from Genshin Impact Fandom Wiki. Please take note that I
 
 From the genshin impact wiki there's 2 table that we want to take.
 
-<insert table 1 here
-<insert table 2 here
+![2022-04-09 (3)](https://user-images.githubusercontent.com/92627169/162575951-165df46b-e464-4fa4-abfc-357f01b84f10.png)
+
+![2022-04-09 (4)](https://user-images.githubusercontent.com/92627169/162575921-edbeb56e-8d53-4d2f-bebd-cc4ee8dc2daa.png)
 
 ```
 url_1='https://genshin-impact.fandom.com/wiki/Characters/Comparison#Normal_Attacks'
@@ -70,7 +71,8 @@ If you know a better way or a better code please help by expanding this reposito
 df3.insert(5, "Gender", ['M', "F",  'F', "M", "F","F", 'M',"M", 'M','F',"F","F" ,"F","M","F","F",'M',"M","F" ,"M" ,"F" ,"F","F","F" ,"F" ,
                          "F","F","F","F","M","F","F","F","F",'F',"M","M","Player choice","M","F","M","M","F","F","F","F","F","M" ], True)
  ```
-<insert the final df3 here 
+![2022-04-09](https://user-images.githubusercontent.com/92627169/162575962-0965274d-5062-408f-9561-71ad9e35ca64.png)
+
 After we done with our dataframe, let's move on to our visualization.
 First lets define the color palette dictionary for a better visual.
 

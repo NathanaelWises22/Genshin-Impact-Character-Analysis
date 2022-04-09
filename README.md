@@ -31,6 +31,7 @@ Using Pandas to read html source table and creating Dataframe, and using Seaborn
 We'll be using the data from Genshin Impact Fandom Wiki. Please take note that the data used is last updated on 5-4-2022.
 From the genshin impact wiki there's 2 table that we want to take.
 
+
 ```
 url_1='https://genshin-impact.fandom.com/wiki/Characters/Comparison#Normal_Attacks'
 url_2='https://genshin-impact.fandom.com/wiki/Characters'
@@ -43,10 +44,49 @@ df2 = tables_2[3]
 
 ```
 
-Using Pandas, we parse the table into dataframe
+Using Pandas, we parse the table into a dataframe
+
+After we get our data, let's remove any NaN column and merge the 2 datasets into 1.
 
 
+We get the new dataframe .
 
+I want to make a comparison of the character gender, but because the newest table didn't include it I manually added it by creating a new column.
+If you know a better way or a better code please help by expanding this repository.
+
+After we done with our dataframe, let's move on to our visualization.
+First lets define the color palette dictionary for a better visual.
+
+```
+palette_element ={"Pyro": "#FA1A0D", "Hydro": "#0D8BC4", "Geo": "#FD8D04", "Anemo": "#4CD95A", "Electro" : "#B071C1", "Cryo": "#85D8DF", "None":"#E3E3E3"}
+palette_Region ={"Mondstadt": "#ABCE30", "Liyue": "#FA7711", "Snezhnaya": "#58B4EE", "Inazuma": "#B071C1", "Nan":"#E3E3E3"}
+palette_weapon ={"Sword": "#FA1A0D", "Bow": "#0D8BC4", "Catalyst": "#FD8D04", "Claymore": "#4CD95A","Polearm" : "#B071C1"}
+palette_sex ={"M": "#0D8BC4", "F": "#FA1A0D", "Player choice": "#E3E3E3"}
+
+
+palette_final = dict(palette_weapon)
+palette_final.update(palette_element)
+palette_final.update(palette_Region)
+palette_final.update(palette_sex)
+
+
+# define only important variable
+categorical = ['Region', 'Weapon', 'Element', "Gender"]
+numerical = ['ATK', 'DEF']
+
+```
+
+If you notice that in element & region I include a "None" and "Nan", both are for the Traveller and Aloy which doesn't have their respective element or region.
+
+First, lets take a look about the Gender comparison of Playable character in the game.
+
+```
+ax = sns.countplot(x='Gender',data = df3, palette= palette_sex)
+for p in ax.patches:
+   ax.annotate('{:.1f}'.format(p.get_height()), (p.get_x()+0.25, p.get_height()+0.01))
+
+plt.show()
+```
 
 
 

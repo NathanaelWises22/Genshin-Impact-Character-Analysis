@@ -54,7 +54,7 @@ After we get our data, let's remove any NaN column and merge the 2 datasets into
 
 ```
 df1 = df1.drop(['Icon'], axis = 1)
-df2 = df2.drop(['Icon','Rarity'], axis = 1) #because the Icon and Rarity turn up NaN in th
+df2 = df2.drop(['Icon','Rarity'], axis = 1) #because the Icon and Rarity turn up NaN in the dataframe, let's drop it
 
 df3 = df1.merge(df2)
 
@@ -63,10 +63,10 @@ df3.head()
 ```
 ![2022-04-09 (3)](https://user-images.githubusercontent.com/92627169/162576040-74ccba38-0357-4cf2-8119-fe612ba20cf9.png)
 
-We get the new dataframe .
+We get the new dataframe.
 
-I want to make a comparison of the character gender, but because the newest table didn't include it I manually added it by creating a new column.
-If you know a better way or a better code please help by expanding this repository.
+I want to make a comparison of the character gender, but because the newest table didn't include it. I manually added it by creating a new column.
+If you know a better way, please help by expanding this repository.
 
 ```
 df3.insert(5, "Gender", ['M', "F",  'F', "M", "F","F", 'M',"M", 'M','F',"F","F" ,"F","M","F","F",'M',"M","F" ,"M" ,"F" ,"F","F","F" ,"F" ,

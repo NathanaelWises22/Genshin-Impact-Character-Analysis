@@ -87,6 +87,8 @@ for p in ax.patches:
 
 plt.show()
 ```
+![Male vs Female Character](https://user-images.githubusercontent.com/92627169/162573813-0644a288-547d-4a56-971a-54ab11901342.png)
+
 
 
 
